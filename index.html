@@ -35,11 +35,11 @@
     </div>
     <div class="main-header-user-menu">
       <ul class="user-auth">
-        <li>
-          <a class="user-auth-item" href="#">Войти</a>
+        <li class="user-auth-item">
+          <a class="user-auth-link" href="#">Войти</a>
         </li>
-        <li>
-          <a class="user-auth-item" href="#">Регистрация</a>
+        <li class="user-auth-item">
+          <a class="user-auth-link" href="#">Регистрация</a>
         </li>
       </ul>
       <ul class="user-actions hidden">
@@ -109,8 +109,10 @@
             <p>Соседям на радость!</p>
           </li>
         </ul>
-        <button type="button">Назад</button>
-        <button type="button">Вперед</button>
+        <button class="slider-button slider-button-prev" type="button"><span class="visually-hidden">Назад</span>
+        </button>
+        <button class="slider-button slider-button-next" type="button"><span class="visually-hidden">Вперед</span>
+        </button>
       </li>
       <li class="main-catalog-item main-catalog-item-sale"> Скидки 50%
         <a href="#">На 350 товаров</a>
@@ -130,44 +132,63 @@
 
     <ul class="popular-products-list">
       <li class="popular-products-item product-card">
-        <p>
+        <div class="product-card-image">
           <img src="img/drills/Bosh-BFG-9000.jpg" width="220" height="145" alt="Перфоратор BOSCH BFG 9000">
-        </p>
-        <h3>Перфоратор BOSCH BFG 9000</h3>
-        <p><del>32500 Р.</del></p>
-        <p class="product-card-price">22500 Р.</p>
-        <button class="product-card-button-buy" type="button">Купить</button>
-        <button class="product-card-button-favorite" type="button">В закладки</button>
+        </div>
+        <div class="product-card-info">
+          <h3>Перфоратор BOSCH BFG 9000</h3>
+          <del>32500 Р.</del>
+          <p class="product-card-price">22500 Р.</p>
+        </div>
+        <div class="product-card-buttons">
+          <button class="product-card-button-buy" type="button">Купить</button>
+          <button class="product-card-button-favorite" type="button">В закладки</button>
+        </div>
       </li>
-      <li class="popular-products-item">
-        <p>
+
+      <li class="popular-products-item product-card">
+        <div class="product-card-image">
           <img src="img/drills/BOSCH-BFG-3000.jpg" width="220" height="145" alt="Перфоратор BOSCH BFG 3000">
-        </p>
-        <h3>Перфоратор BOSCH BFG 3000</h3>
-        <p><del>30500 Р.</del></p>
-        <p class="product-card-price">22500 Р.</p>
-        <button class="product-card-button-buy" type="button">Купить</button>
-        <button class="product-card-button-favorite" type="button">В закладки</button>
+        </div>
+        <div class="product-card-info">
+          <h3>Перфоратор BOSCH BFG 3000</h3>
+          <del>30500 Р.</del>
+          <p class="product-card-price">22500 Р.</p>
+        </div>
+        <div class="product-card-buttons">
+          <button class="product-card-button-buy" type="button">Купить</button>
+          <button class="product-card-button-favorite" type="button">В закладки</button>
+        </div>
       </li>
-      <li class="popular-products-item">
-        <p>
+
+      <li class="popular-products-item product-card">
+        <div class="product-card-image">
           <img src="img/drills/BOSCH-BFG-6000.jpg" width="220" height="145" alt="Перфоратор BOSCH BFG 6000">
-        </p>
-        <h3>Перфоратор BOSCH BFG 6000</h3>
-        <p><del>25500 Р.</del></p>
-        <p class="product-card-price">15500 Р.</p>
-        <button class="product-card-button-buy" type="button">Купить</button>
-        <button class="product-card-button-favorite" type="button">В закладки</button>
+        </div>
+        <div class="product-card-info">
+          <h3>Перфоратор BOSCH BFG 6000</h3>
+          <del>25500 Р.</del>
+          <p class="product-card-price">15500 Р.</p>
+        </div>
+        <div class="product-card-buttons">
+          <button class="product-card-button-buy" type="button">Купить</button>
+          <button class="product-card-button-favorite" type="button">В закладки</button>
+        </div>
       </li>
-      <li class="popular-products-item">
-        <p>
+
+      <li class="popular-products-item product-card">
+        <div class="product-card-image">
           <img src="img/drills/BOSCH-BFG-2000.jpg" width="220" height="145" alt="Перфоратор BOSCH BFG 2000">
-        </p>
-        <h3>Перфоратор BOSCH BFG 2000</h3>
-        <p><del>25500 Р.</del></p>
-        <p class="product-card-price">12500 Р.</p>
-        <button class="product-card-button-buy" type="button">Купить</button>
-        <button class="product-card-button-favorite" type="button">В закладки</button>
+        </div>
+        <div class="product-card-info">
+          <h3>Перфоратор BOSCH BFG 2000</h3>
+          <del>25500 Р.</del>
+          <p class="product-card-price">12500 Р.</p>
+        </div>
+        <div class="product-card-buttons">
+          <button class="product-card-button-buy" type="button">Купить</button>
+          <button class="product-card-button-favorite" type="button">В закладки</button>
+        </div>
       </li>
     </ul>
   </section>
@@ -293,19 +314,19 @@
     </a>
     <ul class="main-footer-nav">
       <li>
-        <a href="#">Компания</a>
+        <a href="#" class="main-footer-nav-link">Компания</a>
       </li>
       <li>
-        <a href="#">Новости</a>
+        <a href="#" class="main-footer-nav-link">Новости</a>
       </li>
       <li>
-        <a href="#">Каталог</a>
+        <a href="#" class="main-footer-nav-link">Каталог</a>
       </li>
       <li>
-        <a href="#">Доставка</a>
+        <a href="#" class="main-footer-nav-link">Доставка</a>
       </li>
       <li>
-        <a href="#">Контакты</a>
+        <a href="#" class="main-footer-nav-link">Контакты</a>
       </li>
     </ul>
     <address>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П <br>
@@ -313,31 +334,31 @@
     </address>
     <ul class="main-footer-catalog-nav">
       <li>
-        <a href="#">Материалы</a>
+        <a href="#" class="main-footer-catalog-link">Материалы</a>
       </li>
       <li>
-        <a href="#"> Техника</a>
+        <a href="#" class="main-footer-catalog-link"> Техника</a>
       </li>
       <li>
-        <a href="#"> Инструмент</a>
+        <a href="#" class="main-footer-catalog-link"> Инструмент</a>
       </li>
       <li>
-        <a href="#"> Спецпредложения</a>
+        <a href="#" class="main-footer-catalog-link"> Спецпредложения</a>
       </li>
     </ul>
   </div>
   <div class="footer-footer">
     <div class="main-footer-row container">
-      <p class="main-footer-copyright">© 2010–2021 Компания «Техномарт» Все права защищены</p>
+      <p class="main-footer-copyright">© 2010–2021 Компания «Техномарт»<br> Все права защищены</p>
       <ul class="social">
         <li class="social-item">
-          <a class="social-link" href="#">VK</a>
+          <a class="social-link social-link-vk" href="#"><span class="visually-hidden">VK</span></a>
         </li>
         <li class="social-item">
-          <a class="social-link" href="#">Facebook</a>
+          <a class="social-link social-link-fb" href="#"><span class="visually-hidden">Facebook</span></a>
         </li>
         <li class="social-item">
-          <a class="social-link" href="#">Instagram</a>
+          <a class="social-link social-link-instagram" href="#"><span class="visually-hidden">Instagram</span></a>
         </li>
       </ul>
       <div class="main-footer-info">
@@ -352,9 +373,9 @@
   </div>
 </footer>
 
-<div class="modal modal-letter">
-  <button class="modal-close" type="button">Закрыть</button>
-  <form class="letter-form" action="#">
+<div class="modal modal-letter hidden">
+  <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+  <form class="letter-form" action="#" id="letter">
     <p class="letter-form-item">
       <label for="form-name">Ваше имя:</label>
       <input id="form-name" type="text" name="name" placeholder="Имя Фамилия" required>
@@ -363,16 +384,18 @@
       <label for="form-email">Ваш e-mail:</label>
       <input id="form-email" type="email" placeholder="email@example.com" required>
     </p>
-    <p class="letter-form-item">
+    <p class="letter-form-item letter-form-text">
       <label for="form-text">Текст письма:</label>
       <textarea id="form-text" name="text" placeholder="В свободной форме" required></textarea>
     </p>
-    <button class="button" type="submit">Отправить</button>
   </form>
+  <div class="modal-button-container">
+    <button class="button modal-button-submit" type="submit" form="letter">Отправить</button>
+  </div>
 </div>
 
-<div class="modal modal-map">
-  <button class="modal-close" type="button">Закрыть</button>
+<div class="modal modal-map hidden">
+  <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
   <!--  Here goes a map-->
 </div>
 </body>
