@@ -18,17 +18,28 @@
         <img src="img/logo-technomart.svg" width="108" height="18" alt="Лого компании Техномарт">
       </a>
       <div class="main-header-search">
-        <label for="search">Поиск:</label>
-        <input id="search" type="text"></div>
+        <label for="search">
+          <span class="visually-hidden">Поиск:</span>
+        </label>
+        <input id="search" type="text" placeholder="Поиск">
+        <svg
+          class="main-header-search-icon" width="17" height="17" viewBox="0 0 17 17" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill-rule="evenodd" clip-rule="evenodd"
+            d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"
+          />
+        </svg>
+      </div>
       <a class="main-header-info main-header-info-bookmarks" href="">Закладки: <span>0</span></a>
 
       <a class="main-header-info main-header-info-basket" href="">Корзина : <span>0</span></a>
 
-      <a class="main-header-info main-header-info-checkout" href="#">Оформить заказ</a>
+      <a class="main-header-checkout" href="#">Оформить заказ</a>
     </div>
   </div>
   <div class="main-header-row container">
-    <p class="main-header-tagline">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+    <p class="main-header-tagline">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</p>
     <div class="main-header-contacts">
       <a class="main-header-phone" href="tel:78005558628">+7 800 555-86-28</a>
       <address class="main-header-address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</address>
@@ -36,7 +47,7 @@
     <div class="main-header-user-menu">
       <ul class="user-auth">
         <li class="user-auth-item">
-          <a class="user-auth-link" href="#">Войти</a>
+          <a class="user-auth-link user-auth-link-name user-auth-link-login" href="#">Войти</a>
         </li>
         <li class="user-auth-item">
           <a class="user-auth-link" href="#">Регистрация</a>
@@ -85,7 +96,7 @@
   <section class="main-catalog container">
     <h2 class="visually-hidden">Разделы каталога</h2>
     <ul class="main-catalog-list">
-      <li class="main-catalog-item main-catalog-item-materials"> Материалы
+      <li class="main-catalog-item main-catalog-item-materials new"> Материалы
         <a href="#">на любой вкус</a>
       </li>
 
@@ -146,7 +157,7 @@
         </div>
       </li>
 
-      <li class="popular-products-item product-card">
+      <li class="popular-products-item product-card new">
         <div class="product-card-image">
           <img src="img/drills/BOSCH-BFG-3000.jpg" width="220" height="145" alt="Перфоратор BOSCH BFG 3000">
         </div>
@@ -176,7 +187,7 @@
         </div>
       </li>
 
-      <li class="popular-products-item product-card">
+      <li class="popular-products-item product-card new">
         <div class="product-card-image">
           <img src="img/drills/BOSCH-BFG-2000.jpg" width="220" height="145" alt="Перфоратор BOSCH BFG 2000">
         </div>
@@ -261,20 +272,20 @@
 
       </ul>
       <ul class="services-list">
-        <li class="service-list-item hidden">
+        <li class="service-list-item service-list-item-delivery -hidden">
           <h3>Доставка</h3>
           <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
              Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
         </li>
-        <li class="service-list-item hidden">
+        <li class="service-list-item service-list-item-guarantee hidden">
           <h3>Гарантия</h3>
           <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
           </p>
         </li>
-        <li class="service-list-item">
+        <li class="service-list-item service-list-item-credit hidden">
           <h3>Кредит</h3>
           <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-          <a class="button" href="#">Отправить заявку</a>
+          <a class="button service-list-button" href="#">Отправить заявку</a>
         </li>
       </ul>
     </div>

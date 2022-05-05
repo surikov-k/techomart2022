@@ -19,17 +19,29 @@
         <img src="img/logo-technomart.svg" width="108" height="18" alt="Лого компании Техномарт">
       </a>
       <div class="main-header-search">
-        <label for="search">Поиск:</label>
-        <input id="search" type="text"></div>
+        <label for="search">
+          <span class="visually-hidden">Поиск:</span>
+        </label>
+        <input id="search" type="text" placeholder="Поиск">
+        <svg
+          class="main-header-search-icon" width="17" height="17" viewBox="0 0 17 17" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill-rule="evenodd" clip-rule="evenodd"
+            d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"
+          />
+        </svg>
+      </div>
       <a class="main-header-info main-header-info-bookmarks" href="">Закладки: <span>0</span></a>
 
-      <a class="main-header-info main-header-info-basket" href="">Корзина : <span>0</span></a>
+      <a class="main-header-info main-header-info-basket main-header-info-basket-full" href="">Корзина : <span>10</span>
+      </a>
 
-      <a class="main-header-info main-header-info-checkout" href="#">Оформить заказ</a>
+      <a class="main-header-checkout" href="#">Оформить заказ</a>
     </div>
   </div>
   <div class="main-header-row container">
-    <p class="main-header-tagline">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+    <p class="main-header-tagline">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</p>
     <div class="main-header-contacts">
       <a class="main-header-phone" href="tel:78005558628">+7 800 555-86-28</a>
       <address class="main-header-address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</address>
@@ -37,7 +49,7 @@
     <div class="main-header-user-menu">
       <ul class="user-auth">
         <li class="user-auth-item">
-          <a class="user-auth-link" href="#">Равшан Джамшутович</a>
+          <a class="user-auth-link user-auth-link-name user-auth-link-logout" href="#">Равшан Джамшутович</a>
         </li>
         <li class="user-auth-item hidden">
           <a class="user-auth-link" href="#">Регистрация</a>
@@ -124,34 +136,46 @@
         <fieldset class="form-fieldset">
           <legend class="form-legend">Производители:</legend>
           <div class="form-input-group">
-            <input id="manufacturer-bosch" type="checkbox" name="manufacturer" value="bosch" checked>
+            <input
+              class="form-checkbox visually-hidden" id="manufacturer-bosch" type="checkbox" name="manufacturer"
+              value="bosch" checked>
             <label for="manufacturer-bosch">Bosch</label>
           </div>
           <div class="form-input-group">
-            <input id="manufacturer-interscol" type="checkbox" name="manufacturer" value="interscol">
+            <input
+              class="form-checkbox visually-hidden" id="manufacturer-interscol" type="checkbox" name="manufacturer"
+              value="interscol">
             <label for="manufacturer-interscol">Интерскол</label>
           </div>
           <div class="form-input-group">
-            <input id="manufacturer-makita" type="checkbox" name="manufacturer" value="makita" checked>
+            <input
+              class="form-checkbox visually-hidden" id="manufacturer-makita" type="checkbox" name="manufacturer"
+              value="makita"
+              checked>
             <label for="manufacturer-makita">Makita</label>
           </div>
           <div class="form-input-group">
-            <input id="manufacturer-dewalt" type="checkbox" name="manufacturer" value="dewalt">
+            <input
+              class="form-checkbox visually-hidden" id="manufacturer-dewalt" type="checkbox" name="manufacturer"
+              value="dewalt">
             <label for="manufacturer-dewalt">Dewalt</label>
           </div>
           <div class="form-input-group">
-            <input id="manufacturer-hitachi" type="checkbox" name="manufacturer" value="hitachi">
+            <input
+              class="form-checkbox visually-hidden" id="manufacturer-hitachi" type="checkbox" name="manufacturer"
+              value="hitachi">
             <label for="manufacturer-hitachi">Hitachi</label>
           </div>
         </fieldset>
         <fieldset class="form-fieldset">
           <legend class="form-legend">Питание:</legend>
           <div class="form-input-group">
-            <input id="power-battery" type="radio" name="power" value="battery" checked>
+            <input
+              class=" form-radio visually-hidden" id="power-battery" type="radio" name="power" value="battery" checked>
             <label for="power-battery">Аккумуляторные</label>
           </div>
           <div class="form-input-group">
-            <input id="power-mains" type="radio" name="power" value="mains">
+            <input class=" form-radio visually-hidden" id="power-mains" type="radio" name="power" value="mains">
             <label for="power-mains">Сетевые</label>
           </div>
         </fieldset>
@@ -217,7 +241,7 @@
           </div>
         </li>
 
-        <li class="catalog-item product-card">
+        <li class="catalog-item product-card new">
           <div class="product-card-image">
             <img src="img/drills/BOSCH-BFG-6000.jpg" width="220" height="145" alt="Перфоратор BOSCH BFG 6000">
           </div>
@@ -232,7 +256,7 @@
           </div>
         </li>
 
-        <li class="catalog-item product-card">
+        <li class="catalog-item product-card new">
           <div class="product-card-image">
             <img src="img/drills/BOSCH-BFG-3000.jpg" width="220" height="145" alt="Перфоратор BOSCH BFG 3000">
           </div>
@@ -262,21 +286,7 @@
           </div>
         </li>
 
-        <li class="catalog-item product-card">
-          <div class="product-card-image">
-            <img src="img/drills/BOSCH-BFG-2000.jpg" width="220" height="145" alt="Перфоратор BOSCH BFG 2000">
-          </div>
-          <div class="product-card-info">
-            <h3>Перфоратор BOSCH BFG 2000</h3>
-            <p class="product-card-price">25500 Р.</p>
-          </div>
-          <div class="product-card-buttons">
-            <button class="product-card-button-buy" type="button">Купить</button>
-            <button class="product-card-button-favorite" type="button">В закладки</button>
-          </div>
-        </li>
-
-        <li class="catalog-item product-card">
+        <li class="catalog-item product-card new">
           <div class="product-card-image">
             <img src="img/drills/BOSCH-BFG-2000.jpg" width="220" height="145" alt="Перфоратор BOSCH BFG 2000">
           </div>
@@ -290,7 +300,7 @@
           </div>
         </li>
 
-        <li class="catalog-item product-card">
+        <li class="catalog-item product-card new">
           <div class="product-card-image">
             <img src="img/drills/BOSCH-BFG-3000.jpg" width="220" height="145" alt="Перфоратор BOSCH BFG 3000">
           </div>
@@ -320,7 +330,7 @@
           </div>
         </li>
 
-        <li class="catalog-item product-card">
+        <li class="catalog-item product-card new">
           <div class="product-card-image">
             <img src="img/drills/BOSCH-BFG-2000.jpg" width="220" height="145" alt="Перфоратор BOSCH BFG 2000">
           </div>
