@@ -438,12 +438,35 @@
     </div>
   </div>
 </footer>
-
+ga
 <div class="modal modal-basket hidden">
   <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
   <p class="modal-basket-text">Товар добавлен в корзину!</p>
-  <button class="button" type="button">Оформить заказ</button>
-  <button class="button-secondary" type="button">Продолжить покупки</button>
+  <div class="modal-button-container">
+    <button class="button" type="button">Оформить заказ</button>
+    <button class="button-secondary" type="button">Продолжить покупки</button>
+  </div>
+</div>
+
+<div class="modal modal-letter hidden">
+  <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+  <form class="letter-form" action="#" id="letter">
+    <p class="letter-form-item">
+      <label for="form-name">Ваше имя:</label>
+      <input id="form-name" type="text" name="name" placeholder="Имя Фамилия" required>
+    </p>
+    <p class="letter-form-item">
+      <label for="form-email">Ваш e-mail:</label>
+      <input id="form-email" type="email" placeholder="email@example.com" required>
+    </p>
+    <p class="letter-form-item letter-form-text">
+      <label for="form-text">Текст письма:</label>
+      <textarea id="form-text" name="text" placeholder="В свободной форме" required></textarea>
+    </p>
+  </form>
+  <div class="modal-button-container">
+    <button class="button modal-button-submit" type="submit" form="letter">Отправить</button>
+  </div>
 </div>
 
 

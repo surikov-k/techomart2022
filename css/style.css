@@ -176,7 +176,7 @@ img {
 
 .button {
   display: block;
-  padding: 11px 40px 8px;
+  padding: 11px 0 8px;
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -202,7 +202,7 @@ img {
 }
 
 .button-secondary {
-  padding: 10px;
+  padding: 10px 0;
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -1389,6 +1389,14 @@ input:focus + .main-header-search-icon {
 .modal-button-container {
   background-color: #f4f4f4;
   padding: 37px 80px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.modal-button-container button {
+  width: 50%;
+  flex-grow: 1;
 }
 
 .modal-button-submit {
@@ -1401,7 +1409,11 @@ input:focus + .main-header-search-icon {
 
 .modal-map {
   width: 943px;
-  height: 449px;
+  height: 456px;
+}
+
+.modal-map iframe {
+  border: none;
 }
 
 .letter-form {
@@ -1414,6 +1426,12 @@ input:focus + .main-header-search-icon {
 .letter-form-item {
   margin: 0;
 }
+
+.letter-form-item label {
+  display: block;
+  margin-bottom: 11px;
+}
+
 
 .letter-form input,
 .letter-form textarea {
@@ -1428,6 +1446,7 @@ input:focus + .main-header-search-icon {
 }
 
 .letter-form-text {
+  margin-top: 13px;
   grid-column: 1 / -1;
 }
 
@@ -1884,11 +1903,37 @@ input:focus + .main-header-search-icon {
   margin: 0 0 1px;
 }
 
+.modal-basket {
+  width: 620px;
+  padding-top: 73px;
+}
+
+.modal-basket .modal-button-container {
+  padding-left: 114px;
+  padding-right: 114px;
+}
+
 .modal-basket-text {
+  position: relative;
+  width: 420px;
+  margin: 0 auto 68px;
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
   color: var(--black);
   text-align: center;
+}
+
+.modal-basket-text::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 66px;
+  height: 66px;
+  background-image: url("../img/icons/icon-mark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
