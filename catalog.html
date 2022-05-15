@@ -10,12 +10,12 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="page-body">
+<body class="catalog-body">
 
 <header class="main-header">
   <div class="main-header-wrapper">
     <div class="container main-header-statusline">
-      <a href="index.html" class="main-logo main-header-logo">
+      <a class="main-logo main-header-logo" href="index.html">
         <img src="img/logo-technomart.svg" width="108" height="18" alt="Лого компании Техномарт">
       </a>
       <div class="main-header-search">
@@ -34,14 +34,14 @@
       </div>
       <a class="main-header-info main-header-info-bookmarks" href="">Закладки: <span>0</span></a>
 
-      <a class="main-header-info main-header-info-basket main-header-info-basket-full" href="">Корзина : <span>10</span>
+      <a class="main-header-info main-header-info-basket main-header-info-basket-full" href="">Корзина: <span>10</span>
       </a>
 
       <a class="main-header-checkout" href="#">Оформить заказ</a>
     </div>
   </div>
   <div class="main-header-row container">
-    <p class="main-header-tagline">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</p>
+    <p class="main-header-tagline">Интернет-магазин <br> строительных материалов и&nbsp;инструментов для ремонта</p>
     <div class="main-header-contacts">
       <a class="main-header-phone" href="tel:78005558628">+7 800 555-86-28</a>
       <address class="main-header-address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</address>
@@ -198,11 +198,11 @@
       </ul>
       <ul class="sort-order">
         <li class="sort-order-item">
-          <a href="#" class="sort-order-link sort-order-link-active"><span class="visually-hidden">По возрастанию</span>
+          <a class="sort-order-link sort-order-link-active" href="#"><span class="visually-hidden">По возрастанию</span>
           </a>
         </li>
         <li class="sort-order-item">
-          <a href="#" class="sort-order-link sort-order-link-desc"><span class="visually-hidden">По убыванию</span></a>
+          <a class="sort-order-link sort-order-link-desc" href="#"><span class="visually-hidden">По убыванию</span></a>
         </li>
       </ul>
     </section>
@@ -380,19 +380,19 @@
     </a>
     <ul class="main-footer-nav">
       <li>
-        <a href="#" class="main-footer-nav-link">Компания</a>
+        <a class="main-footer-nav-link" href="#">Компания</a>
       </li>
       <li>
-        <a href="#" class="main-footer-nav-link">Новости</a>
+        <a class="main-footer-nav-link" href="#">Новости</a>
       </li>
       <li>
-        <a href="#" class="main-footer-nav-link">Каталог</a>
+        <a class="main-footer-nav-link" href="#">Каталог</a>
       </li>
       <li>
-        <a href="#" class="main-footer-nav-link">Доставка</a>
+        <a class="main-footer-nav-link" href="#">Доставка</a>
       </li>
       <li>
-        <a href="#" class="main-footer-nav-link">Контакты</a>
+        <a class="main-footer-nav-link" href="#">Контакты</a>
       </li>
     </ul>
     <address>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П <br>
@@ -400,16 +400,16 @@
     </address>
     <ul class="main-footer-catalog-nav">
       <li>
-        <a href="#" class="main-footer-catalog-link">Материалы</a>
+        <a class="main-footer-catalog-link" href="#">Материалы</a>
       </li>
       <li>
-        <a href="#" class="main-footer-catalog-link"> Техника</a>
+        <a class="main-footer-catalog-link" href="#"> Техника</a>
       </li>
       <li>
-        <a href="#" class="main-footer-catalog-link"> Инструмент</a>
+        <a class="main-footer-catalog-link" href="#"> Инструмент</a>
       </li>
       <li>
-        <a href="#" class="main-footer-catalog-link"> Спецпредложения</a>
+        <a class="main-footer-catalog-link" href="#"> Спецпредложения</a>
       </li>
     </ul>
   </div>
@@ -438,7 +438,7 @@
     </div>
   </div>
 </footer>
-ga
+
 <div class="modal modal-basket hidden">
   <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
   <p class="modal-basket-text">Товар добавлен в корзину!</p>
@@ -450,7 +450,7 @@ ga
 
 <div class="modal modal-letter hidden">
   <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
-  <form class="letter-form" action="#" id="letter">
+  <form class="letter-form" id="letter" action="#">
     <p class="letter-form-item">
       <label for="form-name">Ваше имя:</label>
       <input id="form-name" type="text" name="name" placeholder="Имя Фамилия" required>
