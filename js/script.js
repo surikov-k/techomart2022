@@ -68,6 +68,8 @@ if (openFormButton && formPopup) {
 
       if (!formName.value || !formEmail.value) {
         evt.preventDefault();
+        formPopup.classList.remove('modal-error');
+        formPopup.offsetWidth = formPopup.offsetWidth;
         formPopup.classList.add('modal-error');
       } else {
         if (isStorageSupported) {
