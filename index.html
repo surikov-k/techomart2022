@@ -24,7 +24,8 @@
         <input id="search" type="text" placeholder="Поиск">
         <svg
           class="main-header-search-icon" width="17" height="17" viewBox="0 0 17 17" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true">
           <path
             fill-rule="evenodd" clip-rule="evenodd"
             d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"
@@ -120,6 +121,14 @@
             <p>Соседям на радость!</p>
           </li>
         </ul>
+        <ul class="slider-dots">
+          <li class="slider-dots-item slider-dots-active">
+            <button><span class="visually-hidden">Слайд 1</span></button>
+          </li>
+          <li class="slider-dots-item">
+            <button><span class="visually-hidden">Слайд 2</span></button>
+          </li>
+        </ul>
         <button class="slider-button slider-button-prev" type="button"><span class="visually-hidden">Назад</span>
         </button>
         <button class="slider-button slider-button-next" type="button"><span class="visually-hidden">Вперед</span>
@@ -152,8 +161,16 @@
           <p class="product-card-price">22500 Р.</p>
         </div>
         <div class="product-card-buttons">
-          <button class="product-card-button-buy" type="button">Купить</button>
-          <button class="product-card-button-favorite" type="button">В закладки</button>
+          <button
+            class="product-card-button-buy"
+            type="button"
+            aria-label="Добавить перфоратор BOSCH BFG 9000 в козину">Купить
+          </button>
+          <button
+            class="product-card-button-favorite"
+            type="button"
+            aria-label="Добавить перфоратор BOSCH BFG 9000 в закладки">В закладки
+          </button>
         </div>
       </li>
 
@@ -167,8 +184,16 @@
           <p class="product-card-price">22500 Р.</p>
         </div>
         <div class="product-card-buttons">
-          <button class="product-card-button-buy" type="button">Купить</button>
-          <button class="product-card-button-favorite" type="button">В закладки</button>
+          <button
+            class="product-card-button-buy"
+            type="button"
+            aria-label="Добавить перфоратор BOSCH BFG 3000 в козину">Купить
+          </button>
+          <button
+            class="product-card-button-favorite"
+            type="button"
+            aria-label="Добавить перфоратор BOSCH BFG 3000 в закладки">В закладки
+          </button>
         </div>
       </li>
 
@@ -182,8 +207,16 @@
           <p class="product-card-price">15500 Р.</p>
         </div>
         <div class="product-card-buttons">
-          <button class="product-card-button-buy" type="button">Купить</button>
-          <button class="product-card-button-favorite" type="button">В закладки</button>
+          <button
+            class="product-card-button-buy"
+            type="button"
+            aria-label="Добавить перфоратор BOSCH BFG 6000 в козину">Купить
+          </button>
+          <button
+            class="product-card-button-favorite"
+            type="button"
+            aria-label="Добавить перфоратор BOSCH BFG 6000 в закладки">В закладки
+          </button>
         </div>
       </li>
 
@@ -197,8 +230,16 @@
           <p class="product-card-price">12500 Р.</p>
         </div>
         <div class="product-card-buttons">
-          <button class="product-card-button-buy" type="button">Купить</button>
-          <button class="product-card-button-favorite" type="button">В закладки</button>
+          <button
+            class="product-card-button-buy"
+            type="button"
+            aria-label="Добавить перфоратор BOSCH BFG 2000 в козину">Купить
+          </button>
+          <button
+            class="product-card-button-favorite"
+            type="button"
+            aria-label="Добавить перфоратор BOSCH BFG 2000 в закладки">В закладки
+          </button>
         </div>
       </li>
     </ul>
@@ -314,16 +355,19 @@
     <section class="contacts">
       <h2 class="section-title">Контакты</h2>
       <p>Вы можете забрать товар сами, <br> заехав в наш офис:</p>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1446.6232113787617!2d30.31389620378362!3d59.96865546895623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sse!4v1652104692159!5m2!1sen!2sse"
-        width="300"
-        height="158"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        title="наб. Реки Карповки, 5 лит П, Санкт-Петербург">
-      </iframe>
+      <div class="contacts-map-wrapper">
+        <button class="contacts-open-map"><span class="visually-hidden">Открыть карту</span></button>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1446.6232113787617!2d30.31389620378362!3d59.96865546895623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sse!4v1652104692159!5m2!1sen!2sse"
+          width="300"
+          height="158"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="наб. Реки Карповки, 5 лит П, Санкт-Петербург">
+        </iframe>
+      </div>
       <a class="button" href="#">Заблудились? Напишите нам!</a>
     </section>
   </div>
@@ -394,20 +438,20 @@
   </div>
 </footer>
 
-<div class="modal modal-letter -hidden">
+<div class="modal modal-letter">
   <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
-  <form class="letter-form" id="letter" action="#">
+  <form class="letter-form" id="letter" action="https://echo.htmlacademy.ru" method="post">
     <p class="letter-form-item">
       <label for="form-name">Ваше имя:</label>
-      <input id="form-name" type="text" name="name" placeholder="Имя Фамилия" required>
+      <input id="form-name" type="text" name="name" placeholder="Имя Фамилия">
     </p>
     <p class="letter-form-item">
       <label for="form-email">Ваш e-mail:</label>
-      <input id="form-email" type="email" placeholder="email@example.com" required>
+      <input id="form-email" type="email" name="email" placeholder="email@example.com">
     </p>
     <p class="letter-form-item letter-form-text">
       <label for="form-text">Текст письма:</label>
-      <textarea id="form-text" name="text" placeholder="В свободной форме" required></textarea>
+      <textarea id="form-text" name="text" placeholder="В свободной форме"></textarea>
     </p>
   </form>
   <div class="modal-button-container">
@@ -415,7 +459,7 @@
   </div>
 </div>
 
-<div class="modal modal-map hidden">
+<div class="modal modal-map">
   <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
   <iframe
     src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1446.6232113787617!2d30.31389620378362!3d59.96865546895623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sse!4v1652104495501!5m2!1sen!2sse"
@@ -427,5 +471,6 @@
     title="наб. Реки Карповки, 5 лит П, Санкт-Петербург">
   </iframe>
 </div>
+<script src="js/script.js"></script>
 </body>
 </html>

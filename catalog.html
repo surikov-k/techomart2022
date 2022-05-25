@@ -25,7 +25,8 @@
         <input id="search" type="text" placeholder="Поиск">
         <svg
           class="main-header-search-icon" width="17" height="17" viewBox="0 0 17 17" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true">
           <path
             fill-rule="evenodd" clip-rule="evenodd"
             d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"
@@ -120,13 +121,15 @@
       <form class="filter-form form" action="https://echo.htmlacademy.ru/">
         <fieldset class="form-fieldset">
           <legend class="form-legend">Цена:</legend>
-          <div class="price-slider">
-            <div class="line">
-              <span class="handle handle-min"></span>
-              <span class="handle handle-max"></span>
+          <div class="price-range-controls">
+            <div class="bar">
+              <div class="bar-amount">
+                <span class="handle handle-min"></span>
+                <span class="handle handle-max"></span>
+              </div>
             </div>
           </div>
-          <div class="price-slider-inputs">
+          <div class="price-range-inputs">
             <label class="visually-hidden" for="price-from">От</label>
             <input id="price-from" type="number" name="price-form" placeholder="0">
             <label class="visually-hidden" for="price-to">До</label>
@@ -221,8 +224,16 @@
             <p class="product-card-price">25500 Р.</p>
           </div>
           <div class="product-card-buttons">
-            <button class="product-card-button-buy" type="button">Купить</button>
-            <button class="product-card-button-favorite" type="button">В закладки</button>
+            <button
+              class="product-card-button-buy"
+              type="button"
+              aria-label="Добавить перфоратор BOSCH BFG 6000 в козину">Купить
+            </button>
+            <button
+              class="product-card-button-favorite"
+              type="button"
+              aria-label="Добавить перфоратор BOSCH BFG 6000 в закладки">В закладки
+            </button>
           </div>
         </li>
 
@@ -236,8 +247,16 @@
             <p class="product-card-price">25500 Р.</p>
           </div>
           <div class="product-card-buttons">
-            <button class="product-card-button-buy" type="button">Купить</button>
-            <button class="product-card-button-favorite" type="button">В закладки</button>
+            <button
+              class="product-card-button-buy"
+              type="button"
+              aria-label="Добавить перфоратор BOSCH BFG 6000 в козину">Купить
+            </button>
+            <button
+              class="product-card-button-favorite"
+              type="button"
+              aria-label="Добавить перфоратор BOSCH BFG 6000 в закладки">В закладки
+            </button>
           </div>
         </li>
 
@@ -251,8 +270,16 @@
             <p class="product-card-price">25500 Р.</p>
           </div>
           <div class="product-card-buttons">
-            <button class="product-card-button-buy" type="button">Купить</button>
-            <button class="product-card-button-favorite" type="button">В закладки</button>
+            <button
+              class="product-card-button-buy"
+              type="button"
+              aria-label="Добавить перфоратор BOSCH BFG 6000 в козину">Купить
+            </button>
+            <button
+              class="product-card-button-favorite"
+              type="button"
+              aria-label="Добавить перфоратор BOSCH BFG 63000 в закладки">В закладки
+            </button>
           </div>
         </li>
 
@@ -266,8 +293,16 @@
             <p class="product-card-price">15500 Р.</p>
           </div>
           <div class="product-card-buttons">
-            <button class="product-card-button-buy" type="button">Купить</button>
-            <button class="product-card-button-favorite" type="button">В закладки</button>
+            <button
+              class="product-card-button-buy"
+              type="button"
+              aria-label="Добавить перфоратор BOSCH BFG 3000 в козину">Купить
+            </button>
+            <button
+              class="product-card-button-favorite"
+              type="button"
+              aria-label="Добавить перфоратор BOSCH BFG 3000 в закладки">В закладки
+            </button>
           </div>
         </li>
 
@@ -281,8 +316,16 @@
             <p class="product-card-price">25500 Р.</p>
           </div>
           <div class="product-card-buttons">
-            <button class="product-card-button-buy" type="button">Купить</button>
-            <button class="product-card-button-favorite" type="button">В закладки</button>
+            <button
+              class="product-card-button-buy"
+              type="button"
+              aria-label="Добавить перфоратор BOSCH BFG 6000 в козину">Купить
+            </button>
+            <button
+              class="product-card-button-favorite"
+              type="button"
+              aria-label="Добавить перфоратор BOSCH BFG 6000 в закладки">В закладки
+            </button>
           </div>
         </li>
 
@@ -295,8 +338,16 @@
             <p class="product-card-price">12500 Р.</p>
           </div>
           <div class="product-card-buttons">
-            <button class="product-card-button-buy" type="button">Купить</button>
-            <button class="product-card-button-favorite" type="button">В закладки</button>
+            <button
+              class="product-card-button-buy"
+              type="button"
+              aria-label="Добавить перфоратор BOSCH BFG 2000 в козину">Купить
+            </button>
+            <button
+              class="product-card-button-favorite"
+              type="button"
+              aria-label="Добавить перфоратор BOSCH BFG 2000 в закладки">В закладки
+            </button>
           </div>
         </li>
 
@@ -310,8 +361,16 @@
             <p class="product-card-price">15500 Р.</p>
           </div>
           <div class="product-card-buttons">
-            <button class="product-card-button-buy" type="button">Купить</button>
-            <button class="product-card-button-favorite" type="button">В закладки</button>
+            <button
+              class="product-card-button-buy"
+              type="button"
+              aria-label="Добавить перфоратор BOSCH BFG 3000 в козину">Купить
+            </button>
+            <button
+              class="product-card-button-favorite"
+              type="button"
+              aria-label="Добавить перфоратор BOSCH BFG 3000 в закладки">В закладки
+            </button>
           </div>
         </li>
 
@@ -325,8 +384,16 @@
             <p class="product-card-price">25500 Р.</p>
           </div>
           <div class="product-card-buttons">
-            <button class="product-card-button-buy" type="button">Купить</button>
-            <button class="product-card-button-favorite" type="button">В закладки</button>
+            <button
+              class="product-card-button-buy"
+              type="button"
+              aria-label="Добавить перфоратор BOSCH BFG 6000 в козину">Купить
+            </button>
+            <button
+              class="product-card-button-favorite"
+              type="button"
+              aria-label="Добавить перфоратор BOSCH BFG 6000 в закладки">В закладки
+            </button>
           </div>
         </li>
 
@@ -339,8 +406,16 @@
             <p class="product-card-price">25500 Р.</p>
           </div>
           <div class="product-card-buttons">
-            <button class="product-card-button-buy" type="button">Купить</button>
-            <button class="product-card-button-favorite" type="button">В закладки</button>
+            <button
+              class="product-card-button-buy"
+              type="button"
+              aria-label="Добавить перфоратор BOSCH BFG 2000 в козину">Купить
+            </button>
+            <button
+              class="product-card-button-favorite"
+              type="button"
+              aria-label="Добавить перфоратор BOSCH BFG 2000 в закладки">В закладки
+            </button>
           </div>
         </li>
       </ul>
@@ -448,27 +523,6 @@
   </div>
 </div>
 
-<div class="modal modal-letter hidden">
-  <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
-  <form class="letter-form" id="letter" action="#">
-    <p class="letter-form-item">
-      <label for="form-name">Ваше имя:</label>
-      <input id="form-name" type="text" name="name" placeholder="Имя Фамилия" required>
-    </p>
-    <p class="letter-form-item">
-      <label for="form-email">Ваш e-mail:</label>
-      <input id="form-email" type="email" placeholder="email@example.com" required>
-    </p>
-    <p class="letter-form-item letter-form-text">
-      <label for="form-text">Текст письма:</label>
-      <textarea id="form-text" name="text" placeholder="В свободной форме" required></textarea>
-    </p>
-  </form>
-  <div class="modal-button-container">
-    <button class="button modal-button-submit" type="submit" form="letter">Отправить</button>
-  </div>
-</div>
-
-
+<script src="js/script.js"></script>
 </body>
 </html>
